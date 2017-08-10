@@ -1,0 +1,27 @@
+h1{
+	text-align: center;
+}
+table{
+	margin: auto;
+	width:20%;
+	height: 250px;
+}
+
+.one{
+	border-bottom: 1px solid black;
+}
+.two{
+	border-bottom: 1px solid black;
+}
+.bor{
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+}
+#last{
+	border-bottom: none;
+}
+
+
+/*each td given 100 by 100 pixel
+turn on border on  on elements*/

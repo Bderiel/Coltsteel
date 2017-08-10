@@ -1,0 +1,27 @@
+
+
+p{
+	font-family: "Roboto";
+	border: 2px solid blue;
+	width: 200px;  
+	height: 50%;        /* parent element percentage use */
+	padding: 40px;       /*padding left and border */
+
+
+}
+/*h1{
+	font-family: "Georgia";
+	font-size: 12px;     /*or em dynamic size ex 2.0 double of parent*/
+/*/*}
+p{
+	font-family: "Arial";
+	font-weight: bold;   /*or 100 to 800 lighest to heaviest*/
+	/*line-height: 2;  /*double space*/
+/*	text-align: center;
+	text-decoration: underline;   /*line-through*/
+/*Box model. how to layout. move div top right. 
+Every elemtent has a rectangle around it.
+https://www.w3schools.com/css/css_boxmodel.asp
+Content / Padding / Border / Margin 
+can give margin four values auto margin centers
+*/

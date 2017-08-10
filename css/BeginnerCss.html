@@ -1,0 +1,85 @@
+<!-- css seperate style sheets
+http://www.csszengarden.com/
+
+selector{
+	property: value;
+	anotherPro:value;
+	conflicting styles later one takes property
+	always use a link tage <link rel="stylesheet" type="text/css" href="CssTest.css"
+    hexdecimal # with 6 digits #FF0242  hexadecimal 0-9 and a-f
+    rgb color 0- 255, 0-255, -255 red green blue ex rgb(0,0,255)
+    rgba the last channel is transperancy 0-1
+      background element to change color or image url:''
+        image tiled by default backround-reapeat:no-repeat
+        backround-size cover to cover whole elemetn with image
+        border-color   
+        border-width
+        border-style
+        border: px soild purple
+        To learn https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048
+            star * selects everything
+            descendant important takes two or more and chains them ex li a or li .hello
+            adjacent selector h4 +ul
+            attribute selector a[attribute] can select specfic links or images any attribute  
+            nth of type ex ul:nth-of-type(3)
+
+           id can only be given once selected in css by #id
+	>   class applied to any number of elements
+	      selcted by .class
+
+	      inherdence from parent element 
+	      specifidy in css change child element after parent changed
+	      Rules:element then class then id then inline
+} -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>About me</title>
+	<style type="text/css">
+		h1 {
+			color: purple;
+		}
+		li{
+			color: orange;
+		}
+
+
+
+
+	</style>
+</head>
+<body>
+<h1>About Me</h1>
+<h4>My Hobbies</h4>
+<ul>
+	<li>Pokemon</li>
+	<li>Javascript</li>
+	<li>Women</li>
+</ul>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="CssTest.css">
+	<title></title>
+</head>
+<body>
+<h1>Todo List</h1>
+<ul>
+	<li class="done">
+		<input type="checkbox" name="">
+		Walk Dog
+	</li>
+	<li class="done">
+		<input type="checkbox" name="">
+		Buy Groceries
+	</li>
+	<li id="video">
+		<input type="checkbox" name="">
+		Finish Video
+	</li>
+</ul>
+</body>
+</html>

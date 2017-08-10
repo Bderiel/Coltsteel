@@ -1,0 +1,13 @@
+h1{
+	color: red;
+}
+li{
+	border: 2px solid red;
+}
+#video{
+	color: blue;
+	background-color: yellow;
+}
+.done{
+	text-decoration: underline;
+}
