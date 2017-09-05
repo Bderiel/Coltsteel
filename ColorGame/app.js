@@ -31,13 +31,16 @@ function rc() {
     return Math.floor(Math.random() * 255) + 1;
 }
 let counter = 0;
+let gameFlag = true;
 $('#reset').click(function () {
     color = [];
     colorGen();
     $(display).removeClass('winner');
     winColor = diplayWinner();
     $(display).show();
+    $(display).prop('disabled', false);
     counter = 0;
+    gameflag = true;
 });
 $(display).click(function () {
 
@@ -45,10 +48,14 @@ $(display).click(function () {
         $('#winner').text('You Win');
         $(display).css('background-color', color[winColor]);
         $(display).show();
+        $(display).prop('disabled', true);
+        gameFlag = false;
     }
-    if (counter > 4) {
+    if (counter > 3) {
         $('#winner').text('You Lose');
-    } else {
+        $(display).prop('disabled', true);
+        gameFlag = false;
+    } else if (!($(this).hasClass('winner')) && gameflag) {
         $(this).hide();
         counter++;
     }
