@@ -1,0 +1,11 @@
+#nav{
+    background-color: grey;
+}
+.display{
+    border: 1px solid black;
+    height: 20em;
+    width: 20em;
+    margin: 15px;
+    /* color: rgb(red, green, blue)  1-255*/
+    
+}
