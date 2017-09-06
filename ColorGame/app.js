@@ -37,8 +37,9 @@ $('#reset').click(function () {
     colorGen();
     $(display).removeClass('winner');
     winColor = diplayWinner();
-    $(display).show();
     $(display).prop('disabled', false);
+    $(display).hide();
+    $(display).fadeIn();
     counter = 0;
     gameflag = true;
 });
@@ -47,7 +48,7 @@ $(display).click(function () {
     if ($(this).hasClass('winner')) {
         $('#winner').text('You Win');
         $(display).css('background-color', color[winColor]);
-        $(display).show();
+        $(display).fadeIn();
         $(display).prop('disabled', true);
         gameFlag = false;
     }
@@ -56,7 +57,7 @@ $(display).click(function () {
         $(display).prop('disabled', true);
         gameFlag = false;
     } else if (!($(this).hasClass('winner')) && gameflag) {
-        $(this).hide();
+        $(this).fadeOut();
         counter++;
     }
 });
