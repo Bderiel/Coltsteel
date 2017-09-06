@@ -39,13 +39,13 @@ $('#reset').click(function () {
     winColor = diplayWinner();
     $(display).prop('disabled', false);
     $(display).hide();
-    $(display).fadeIn();
+    $(display).fadeIn(1000);
     counter = 0;
-    gameflag = true;
+    gameFlag = true;
 });
 $(display).click(function () {
 
-    if ($(this).hasClass('winner')) {
+    if ($(this).hasClass('winner') && gameFlag) {
         $('#winner').text('You Win');
         $(display).css('background-color', color[winColor]);
         $(display).fadeIn();
@@ -56,8 +56,8 @@ $(display).click(function () {
         $('#winner').text('You Lose');
         $(display).prop('disabled', true);
         gameFlag = false;
-    } else if (!($(this).hasClass('winner')) && gameflag) {
-        $(this).fadeOut();
+    } else if (!($(this).hasClass('winner')) && gameFlag) {
+        $(this).fadeOut(1000);
         counter++;
     }
 });
